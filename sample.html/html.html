@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TASK AND CIRCLE</title>
+  <style>
+    canvas {
+      border: 1px solid black;
+    }
+</style>
+</head>
+<body>
+<center>
+    <h1>fillstroke</h1>
+<canvas id="myCanvas" width="300" height="300"></canvas>
+  <script>
+    const canvas = document.getElementById('myCanvas');
+    const ctx = canvas.getContext('2d');
+
+    ctx.beginPath();
+    ctx.arc(150, 150, 100, 0, 2 * Math.PI);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.arc(150, 150, 100, 0, Math.PI);
+    ctx.lineTo(150, 150); 
+    ctx.closePath();
+    ctx.fill();
+</script>
+<br>
+<hr>
+<svg width="200" height="200" style="border:4px solid green;">
+   <circle cx="100" cy="100" r="80"
+  stroke="green" stroke-width="10" fill="red"/>   
+  </circle>
+</svg>
+<br><hr>
+<h1>RECTANGEL </h1>
+<svg width="300" height="130" xmlns="http://www.w3.org/2000/svg" style="border: 4px solid red;">
+  <rect width="270" height="100" x="20" y="15" rx="23" ry="40" fill="blue" />
+
+
+
+</svg>
+
+<h2>first web</h2>
+<h1>first web</h1>
+<p>this id one of the alternaet
+</p>
+<h1>document.write</h1>
+<button trype="button" onclick="document.write(5+7)" >click me </button>
+
+<h1>console log</h1>
+<script>
+console.log(5+7);
+</script><br>
+<br>
+<h1>print page </h1>
+<button onclick="window.print()">print this page</button>
+<br>
+<hr>
+      
+</center>
+</body>
+</html>
