@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><script>
+    async function uploadFile(file) {
+        const formData = new FormData();
+        formData.append('C:\Users\gopin\Desktop\javascript.html'); // Append the file to FormData
+      
+        try {
+          const response = await fetch('C:\Users\gopin\Desktop\javascript.html', {
+            method: 'POST',
+            body: formData
+          });
+      
+          if (!response.ok) {
+            throw new Error('Failed to upload file');
+          }
+      
+          const result = await response.json();
+          console.log('Upload successful:', result);
+        } catch (error) {
+          console.error('Upload error:', error);
+        }
+      }
+      
+      // Assuming you have an input element to select a file
+      document.getElementById('fileInput').addEventListener('change', function(event) {
+        const file = event.target.files[0];
+        uploadFile(file); // Upload the selected file
+      });
+    </script>
+      
+</body>
+</html>
