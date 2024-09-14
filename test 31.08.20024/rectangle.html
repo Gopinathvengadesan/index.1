@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rectangle Class Example</title>
+</head>
+<body>
+    <h1>Rectangle Class Example</h1>
+    <div id="rectangle-info"></div>
+
+    <script>
+        class Rectangle {
+       constructor(width, height) {
+                this.width = width;
+                this.height = height;
+            }
+
+                    getArea() {
+                return this.width * this.height;
+            }
+
+                  getPerimeter() {
+                return 2 * (this.width + this.height);
+            }
+
+        
+            display() {
+                return `Width: ${this.width}, Height: ${this.height} <br>` +
+                       `Area: ${this.getArea()} <br>` +
+                       `Perimeter: ${this.getPerimeter()}`;
+            }
+        }
+
+        
+        const myRectangle = new Rectangle(5, 10);
+
+        
+        document.getElementById('rectangle-info').innerHTML = myRectangle.display();
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upper Pyramid Pattern</title>
+    <style>
+        .pyramid {
+            white-space: pre;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body> <script>
+    function printPyramid(height) {
+      
+        for (let i = 1; i <= height; i++) {
+            
+            let spaces = ' '.repeat(height - i);
+            
+            let stars = '*'.repeat(2 * i - 1);
+            
+            console.log(spaces + stars);
+        }
+    }
+    
+    printPyramid(5);
+        </script>
+</body>
+</html>

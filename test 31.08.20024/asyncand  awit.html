@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>                           
+    <p id="demo"></p>
+    <script>
+        let text = '{"employes":[' + 
+        {"firstName":"Anna","LastName":"doe"}+
+        '{"firstname":"gopinath","lastName":"vengadesan"},'+
+        '{"firstName":"agfkjjabgf","lastName":"gfraubajw"}]}';
+
+
+
+        const obj = jeson.parse(text);
+        document.getElementById("demo").innerHTML =
+        obj.employes [1].firstName+"  " +obj.employes[1].LastName;
+
+    </script>
+    
+</body>
+</html>
