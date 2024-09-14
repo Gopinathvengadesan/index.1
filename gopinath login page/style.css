@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    background: url('image.jpg') no-repeat;
+    background-size: cover;
+}
+
+header { 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99; 
+}
+
+.input-box input {
+    width: 300px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 20px;
+    box-sizing: border-box; 
+}
+
+.logo {   
+    font-size: 50px;
+    color: #fff;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+
+    transition: transform 0.5s;
+}
+
+.navigation .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #8e97c5;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #a4dbdd;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.navigation .btnLogin-popup:hover { 
+    background: #fff;
+    color: black;
+}
+
+.wrapper {
+    position: relative;
+    top: -10px;
+    color: rgb(243, 14, 26);
+}
+
+.input-box { 
+    position: relative; background: transparent;
+}
