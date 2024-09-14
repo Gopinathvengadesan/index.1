@@ -1,0 +1,16 @@
+C:\Users\gopin\source\repos\GopiVengasesanPROJECT\bin\Debug\GopiVengasesanPROJECT.exe.config
+C:\Users\gopin\source\repos\GopiVengasesanPROJECT\bin\Debug\GopiVengasesanPROJECT.exe
+C:\Users\gopin\source\repos\GopiVengasesanPROJECT\bin\Debug\GopiVengasesanPROJECT.pdb
+C:\Users\gopin\source\repos\GopiVengasesanPROJECT\obj\Debug\GopiVengasesanPROJECT.csproj.AssemblyReference.cache
+C:\Users\gopin\source\repos\GopiVengasesanPROJECT\obj\Debug\GopiVengasesanPROJECT.csproj.CoreCompileInputs.cache
+C:\Users\gopin\source\repos\GopiVengasesanPROJECT\obj\Debug\GopiVengasesanPROJECT.exe
+C:\Users\gopin\source\repos\GopiVengasesanPROJECT\obj\Debug\GopiVengasesanPROJECT.pdb
+C:\Users\gopin\source\repos\console.net\GopiVengasesanPROJECT\bin\Debug\GopiVengasesanPROJECT.exe.config
+C:\Users\gopin\source\repos\console.net\GopiVengasesanPROJECT\bin\Debug\GopiVengasesanPROJECT.exe
+C:\Users\gopin\source\repos\console.net\GopiVengasesanPROJECT\bin\Debug\GopiVengasesanPROJECT.pdb
+C:\Users\gopin\source\repos\console.net\GopiVengasesanPROJECT\obj\Debug\GopiVengasesanPROJECT.csproj.AssemblyReference.cache
+C:\Users\gopin\source\repos\console.net\GopiVengasesanPROJECT\obj\Debug\GopiVengasesanPROJECT.csproj.CoreCompileInputs.cache
+C:\Users\gopin\source\repos\console.net\GopiVengasesanPROJECT\obj\Debug\GopiVengasesanPROJECT.exe
+C:\Users\gopin\source\repos\console.net\GopiVengasesanPROJECT\obj\Debug\GopiVengasesanPROJECT.pdb
+C:\Users\gopin\source\repos\console.net\GopiVengasesanPROJECT\obj\Debug\GopiVengasesanPROJECT.Form1.resources
+C:\Users\gopin\source\repos\console.net\GopiVengasesanPROJECT\obj\Debug\GopiVengasesanPROJECT.csproj.GenerateResource.cache
