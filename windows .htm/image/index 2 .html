@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bulb off and on</title>
+</head>
+<body>
+  <center>
+  <br>
+  <hr style=" color: sienna;">
+  <h1 style="color: slategray;">light off and on image task</h1>
+  <img id="myImage" onclick="changeImage()" src="light-bulb-1.png" width="100" height="180">
+  <script>
+    function changeImage() {
+      var image = document.getElementById('myImage');
+      if (image.src.match("light-bulb-1")) {
+        image.src = "light-bulb-2.png";
+      } else {
+        image.src = "light-bulb-2";
+      }
+    }
+    </script><br><hr style="color: crimson;" />
+<h1 style="color: orange;">SVG TSK IN HTML </h1>
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;"></canvas>
+  
+  <script>
+  var c = document.getElementById("myCanvas");
+  var ctx = c.getContext("2d");
+  ctx.font = "30px Arial";
+  ctx.fillText("Hi GOPINATH", 5,60);
+  </script><br>
+
+<hr style="color: yellow;"/>  
+<h1 style="color:teal">CERATE RECTANGEL</h1>
+<svg width="400" height="200">
+  <rect x="80" y="20" width="200" height="100" stroke="red" stroke-width="6" fill="blue" />
+</svg><br>
+<hr style="color: blueviolet;">
+<h1 style="color :red">polygen star</h1>
+<svg width="200" height="200">
+  <polygon points="100,10 40,198 190,78 10,78 160,198"
+  style="fill:yellow;stroke:red;stroke-width:5;fill-rule:even;" />
+</svg>
+<br><hr style="color: red;">
+
+<h1 style="color:deeppink">GRADIENT</h1>
+<svg height="130" width="500">
+  <defs>
+    <linearGradient id="grad1">
+      <stop offset="0%" stop-color="yellow" />
+      <stop offset="100%" stop-color="green" />
+    </linearGradient>
+  </defs>
+  <ellipse cx="250" cy="70" rx="100" ry="55" fill="url(#grad1)" />
+  <text fill="black" font-size="45" font-family="veranda" x="200" y="86">GOPI</text>
+</svg>
+
+<br>
+
+
+
+</center>
+</body>
+</html>

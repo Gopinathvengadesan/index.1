@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <center>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+#div1{
+  width: 350px;
+  height: 200px;
+  padding: 10px;
+  border: 1px solid blue;
+}
+</style>
+<style>#div2{
+    width: 350px;
+  height: 200px;
+  padding: 10px;
+  border: 1px solid green;
+}
+
+    </style>
+<style>
+  div + p {
+    background-color:green;
+  }
+  </style> 
+  
+</head>
+<body>
+<h1 style="color:slateblue"> using ~ </h1>
+  <h2>Adjacent Sibling Selector</h2>
+
+  <div>
+    <p>Paragraph 1 one of the commen focters the shulld be provide.</p>
+    
+  </div>
+  <p>Paragraph 2 one of imporatant and the are usinga multiple valubel thas proved moment.</p>
+  <div>
+  <p>Paragraph 3.vijay songs are amazing and very vibeing.</p>
+  </div>
+  <p>Paragraph 4 Hi evryone this is one of the famous actor vijay film.</p>
+  
+  <div>
+    <p>Paragraph 5 Im a one of the enjoying the vijay alubems and onderfull music  the amazing the particular this  song in master.</p>
+    
+  </div>
+  <p>Paragraph 6 if the tust of the number of many people tha amezing the consoling the aamzing .</p>
+  <div>
+  <p>Paragraph 7.  I am gopinath i hail from tiruvannamalai.i interst  in html docs and using css ,javascrit there is most important  in using html elements.</p>
+  </div>
+  <p>Paragraph 8.simple of using the html ang javascript the one of importan in development.</p>
+  
+  <hr style="color:springgreen;"><br/>
+<h2 style="color:red">Drag and Drop</h2>
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br>
+<img id="drag1" src="loptop.jpg" draggable="true" ondragstart="drag(event)" width="336" height="200"><br>
+
+<h2 style="color: blue;">Drag 2</h2>
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div><br/>
+<br>
+
+<script>
+    function allowDrop(ev) {
+      ev.preventDefault();
+    }
+    
+    function drag(ev) {
+      ev.dataTransfer.setData("text", ev.target.id);
+    }
+    
+    function drop(ev) {
+      ev.preventDefault();
+      var data = ev.dataTransfer.getData("text");
+      ev.target.appendChild(document.getElementById(data));
+    }
+    </script>
+
+<h1 style="color: crimson;"> video pause and play</h1>
+<button onclick="playVid()" type="button">Play Video</button>                                                                                                      
+<button onclick="pauseVid()" type="button">Pause Video</button><br> 
+<button onclick="volume(0)" type="button">mute video</button><br>
+
+
+<br/>
+
+<video id="myVideo" width="600px" height="600px">
+  <source src="vijay video .mp4" type="video/mp4" >
+  <source src="vijay video .mp4" type="video/mp4">
+  
+</video>
+
+<script> 
+let vid = document.getElementById("myVideo"); 
+
+function playVid() { 
+  vid.play(); 
+} 
+function pauseVid() { 
+  vid.pause(); 
+}
+function mutedvid() {
+  vid.volume(0);
+}
+</script>
+<p >Video courtesy of <a href="https://www.bigbuckbunny.org/"  target="_blank">Big Buck Bunny</a>.</p>
+
+<hr/>
+<br>
+<h1 style="color: powderblue;">The video autoplay attribute</h1>
+
+<video width="20%" height="40%" controls autoplay>
+  <source src="vijay video .mp4" type="video/mp4">
+  <source src="vijay video .mp4" type="video/mp4">
+  </video>
+
+
+
+
+
+<br/>
+<hr/>
+<h1>ERROR TRY</h1>
+<p>width <b> let</b>, you cannot use a variable it is declared </p>
+<p id="demo"></p>
+<script>
+try {
+    carName="Saab";
+  let carName="volvo";
+  }
+  catch(err){
+document.getElementById("demo").innerHTML = err;
+  }
+</script>
+
+
+
+<h1>JavaScript Arithmetic</h1>
+<h2>Arithmetic Operations</h2>
+<p>A typical arithmetic operation takes two numbers (or expressions) and produces a new number.</p>
+
+<p id="demo"></p>
+
+<script>
+let y= 22;
+let x =7385 ;
+x += y
+document.getElementById("demo").innerHTML = x+y;
+</script>
+
+
+
+
+
+
+</body>
+
+</center>
+
+    </body>
+</html>
