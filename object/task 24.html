@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>  <p>HI EVERY ONE THIS IS OCCURRENCES</p> 
+    
+<script >function countCharacterOccurrences(str, charToFind) {
+    if (charToFind.length !== 1) {
+        throw new Error("The character to find must be a single character.");
+    }
+
+    let count = 0;
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] === charToFind) {
+            count++;
+        }
+    }
+
+    return count;
+}
+
+// Example usage:
+const string = "hello world";
+const charToFind = "o";
+const occurrences = countCharacterOccurrences(string, charToFind);
+console.log(`The character '${charToFind}' occurs ${occurrences} times in the string.`);
+</script>   </body></html>

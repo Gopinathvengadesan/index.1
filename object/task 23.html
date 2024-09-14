@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+    // Function to print even and odd numbers up to a given limit
+function printEvenAndOddNumbers(limit) {
+  let result = 'Even numbers: ';
+  for (let i = 1; i <= limit; i++) {
+    if (i % 2 === 0) {  // Check if the number is even
+      result += i + ' ';
+    }
+  }
+  result += '<br>Odd numbers: ';
+  for (let i = 1; i <= limit; i++) {
+    if (i % 2 !== 0) {  // Check if the number is odd
+      result += i + ' ';
+    }
+  }
+  return result;
+}
+
+// Call the function with 100 as the limit
+document.getElementById("demo").innerHTML = printEvenAndOddNumbers(100);
+    </script>
+</body>

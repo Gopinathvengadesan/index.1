@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task test</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        function reverseNumber(num) {
+            // Convert the number to a string
+            let strNum = num.toString();
+          
+            // Reverse the string
+            let reversedStrNum = strNum.split("").reverse().join("");
+          
+            // Convert the reversed string back to a number
+            let reversedNum = parseInt(reversedStrNum, 10);
+          
+            return reversedNum;
+        }
+        
+        // Test the function
+        let num = 12345;
+        let reversedNum = reverseNumber(num);
+        console.log(`The reverse of ${num} is ${reversedNum}`);
+        document.getElementById("demo").innerHTML = reversedNum;
+ </script>
+</body>
+</html>
+        </html>

@@ -1,0 +1,44 @@
+ugjhhf<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <center><h1>1.08.2024</h1>
+   <h1>HTML5 Canvas</h1>
+<h2>The rect() Method</h2>
+
+<canvas id="myCanvas" width="300" height="150" style="border:1px solid grey"></canvas>
+
+<script>
+const c = document.getElementById("myCanvas");
+const gop = c.getContext("2d");
+
+// Red rectangle
+gop.beginPath();
+gop.lineWidth = "6";
+gop.strokeStyle = "red";
+gop.rect(5, 5, 290, 140);  
+gop.stroke();
+
+// Green rectangle
+gop.beginPath();
+gop.lineWidth = "4";
+gop.strokeStyle = "green";
+gop.rect(30, 30, 50, 50);
+gop.stroke();
+
+// Blue rectangle
+gop.beginPath();
+gop.lineWidth = "10";
+gop.strokeStyle = "blue";
+gop.rect(50, 50, 150, 80);
+gop.stroke();
+</script> 
+
+</script>
+</center>
+</body>
+</html>
